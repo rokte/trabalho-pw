@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/arte.css">
+</head>
+<body>
+    <header>
+    <h1 align="center" style="color: rgb(230, 226, 181);" class="titulo">Aerolitos Flight</h1>
+    <h3 align="center" style="color: azure;">fazendo os seus sonhos voarem com você</h3>
+    </header>
+    
+
+      <!--abas-->
+  <div class="tabs">
+    <div class="tab active" onclick="openTab(0)">INÍCIO</div>
+    <div class="tab" onclick="openTab(1)">SOBRE</div>
+    <div class="tab" onclick="openTab(2)">CADASTRO</div>
+    <div class="tab" onclick="openTab(3)">LOGIN</div>
+  </div>
+
+  <!--aba inicio-->
+  <div class="content active">
+    <h1 align="center" style="color:rgb(234, 225, 122) ;">CATÁLOGO</h1>
+    <div class="container">
+  
+  <div class="card">
+    <img src="img/gr25858.jpg">
+    <h2>KING AIR C90</h2>
+    <p>Fabricado em 1975</p>
+    <p class="preco">R$ 2.500.000</p>
+    <a href="compra.html"><button>FINANCIE</button></a>
+  </div>
+
+  <div class="card">
+    <img src="img/gr25745.jpg">
+    <h2>CHEROKEE 180</h2>
+    <p>Fabricado em 1974</p>
+    <p class="preco">R$ 640.000</p>
+    <a href="compra.html"><button>FINANCIE</button></a>
+  </div>
+
+  <div class="card">
+    <img src="img/gr25797.jpg">
+    <h2>KITFOX PARDAL II</h2>
+    <p>Fabricado em 1997</p>
+    <p class="preco">R$ 480.000</p>
+    <a href="compra.html"><button>FINANCIE</button></a>
+  </div>
+
+  <div class="card">
+    <img src="img/gr25124.jpg">
+    <h2>BEECHCRAFT</h2>
+    <p>Fabricado em 2008</p>
+    <p class="preco">R$ 1.800.000</p>
+    <a href="compra.html"><button>FINANCIE</button></a>
+  </div>
+
+  <div class="card">
+    <img src="img/gr25439.jpg">
+    <h2>AGUSTA AW109SP GRAND NEW</h2>
+    <p>Fabricado em 2016</p>
+    <p class="preco">R$ 6.700.000</p>
+    <a href="compra.html"><button>FINANCIE</button></a>
+  </div>
+
+  <div class="card">
+    <img src="img/gr24384.jpg">
+    <h2>BELL 206B III</h2>
+    <p>Fabricado em 1968</p>
+    <p class="preco">R$ 1.500.000</p>
+    <a href="compra.html"><button>FINANCIE</button></a>
+  </div>
+
+  <div class="card">
+    <img src="img/gr25748.jpg">
+    <h2>EDRA / SCODA</h2>
+    <p>Fabricado em 2011</p>
+    <p class="preco">R$ 750.000</p>
+    <a href="compra.html"><button>FINANCIE</button></a>
+  </div>
+
+  <div class="card">
+    <img src="img/gr25535.jpg">
+    <h2>EMBRAER / NEIVA - IPANEMA</h2>
+    <p>Fabricado em 2011</p>
+    <p class="preco">R$ 2.000.000</p>
+    <a href="compra.html"><button>FINANCIE</button></a>
+  </div>
+
+</div>
+  </div>
+  <!--aba sobre-->
+  <div class="content">
+    <h1 class="sobre_titulo" align="center">Sobre nós</h1>
+    <h4>Conheça a Aerolitos, onde o céu deixa de ser o limite e passa a ser o seu próximo destino. Especializada na venda de aviões novos e seminovos, nossa empresa oferece soluções completas para clientes que buscam qualidade, segurança e alto desempenho.
+
+Trabalhamos com uma seleção criteriosa de aeronaves, desde jatos executivos sofisticados até aviões de pequeno porte, ideais para uso particular ou corporativo. Cada modelo é cuidadosamente inspecionado e atende aos mais altos padrões da aviação.
+
+Nossa equipe é formada por profissionais experientes, prontos para orientar você em todas as etapas da compra, desde a escolha da aeronave ideal até questões técnicas, documentação e financiamento. Nosso compromisso é proporcionar uma experiência segura, transparente e personalizada.
+
+Seja para negócios ou lazer, estamos aqui para ajudar você a alcançar novos horizontes com confiança e excelência.</h4><br>
+
+<h1 align="center">Contatos</h1>
+<h2>Email:aerolitos@gmail.com</h2>
+<h2>Telefone:(11) 1234-5678</h2>
+<h2>Localização: Santana de Parnaiba,SP</h2>
+  </div>
+    <!--aba cadastro-->
+  <div class="content">
+    <form>
+       USUÁRIO: <input type="text" placeholder="digite o nome de usuário"><br>
+       EMAIL: <input type="email" placeholder="digite um email"><br>
+       TELEFONE: <input type="number" placeholder="digite seu telefone"><br>
+       CPF: <input type="number" placeholder="digite seu CPF"><br>
+       SENHA: <input type="password" placeholder="digite sua senha"><br>
+       CONFIRME SUA SENHA: <input type="password" placeholder="confirme sua senha"><br>
+
+       <input type="submit" value="Enviar">
+    </form>
+  </div>
+  <!--aba login-->
+  <div class="content">
+    <form>
+       USUÁRIO: <input type="text" placeholder="nome de usuário"><br>
+       SENHA: <input type="password" placeholder="digite sua senha"><br>
+       <input type="submit" value="ENVIAR">
+    </form>
+  </div>
+
+
+
+  <script> function openTab(index) {
+      const tabs = document.querySelectorAll('.tab');
+      const contents = document.querySelectorAll('.content');
+
+      tabs.forEach(tab => tab.classList.remove('active'));
+      contents.forEach(content => content.classList.remove('active'));
+
+      tabs[index].classList.add('active');
+      contents[index].classList.add('active');
+    }</script>
+    
+</body>
+</html>
